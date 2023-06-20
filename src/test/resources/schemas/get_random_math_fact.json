@@ -1,0 +1,36 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "numbers-api: Schema for GET /random/math",
+  "type": "object",
+  "required": [
+    "text",
+    "number",
+    "found",
+    "type"
+  ],
+  "properties": {
+    "text": {
+      "title": "Text",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "number": {
+      "title": "Number",
+      "type": "integer",
+      "default": 0
+    },
+    "found": {
+      "title": "Found",
+      "type": "boolean",
+      "default": true
+    },
+    "type": {
+      "title": "Type",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    }
+  }
+}

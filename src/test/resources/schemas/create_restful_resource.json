@@ -1,0 +1,53 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "restful-api: Schema for POST /objects",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "createdAt",
+    "data"
+  ],
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "createdAt": {
+      "title": "Createdat",
+      "type": "string",
+      "default": "",
+      "pattern": "^.*$"
+    },
+    "data": {
+      "title": "Data",
+      "type": "object",
+      "required": [
+        "description",
+        "enabled"
+      ],
+      "properties": {
+        "description": {
+          "title": "Description",
+          "type": "string",
+          "default": "",
+          "pattern": "^.*$"
+        },
+        "enabled": {
+          "title": "Enabled",
+          "type": "boolean",
+          "default": true
+        }
+      }
+    }
+  }
+}
