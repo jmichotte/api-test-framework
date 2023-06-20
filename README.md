@@ -8,7 +8,6 @@ Fork this repo to start testing your REST APIs!
 * Allure reporting
 * Schema-based contract testing
 * Run tests against multiple environments
-* AWS Secrets / Paramstore integration
 * Parallel testing by default
 
 ## Structure and usage
